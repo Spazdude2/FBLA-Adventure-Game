@@ -4,36 +4,39 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour 
 {
-	public float JumpPower = 400;
+    public float verticalVelocity;
 
-	public int jumps = 1;
-	int SetJumps;
+	public float JumpPower = 10;
+    public float Gravity = -14;
 
-	Rigidbody rb;
+	CharacterController Player;
 
 	// Use this for initialization
 	void Start () 
 	{
-		rb = this.GetComponent<Rigidbody> ();
-		SetJumps = jumps;
+		Player = this.GetComponent<CharacterController> ();
 
 	}
 
 	// Update is called once per frame
 	void Update ()
 	{
-		if (jumps > 0) 
+		if (Player.isGrounded) 
 		{
-			if (Input.GetButtonDown ("Jump")) 
+            verticalVelocity = Gravity * Time.deltaTime;
+            if (Input.GetButtonDown ("Jump")) 
 			{
-				jumps--;
-				rb.GetComponent<Rigidbody> ().AddForce (0, JumpPower, 0);
+                verticalVelocity = JumpPower;
 			}
 		}
+
+        else
+        {
+            verticalVelocity -= -Gravity * Time.deltaTime;
+        }
+
+        Vector3 jump = new Vector3(0, verticalVelocity, 0);
+        Player.Move(jump * Time.deltaTime);
 	}
 
-	void OnCollisionEnter (Collision collision)
-	{
-		jumps = SetJumps;
-	}
 }

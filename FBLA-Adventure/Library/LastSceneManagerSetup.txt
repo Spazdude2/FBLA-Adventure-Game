@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Start of project.unity
+- path: Assets/Park Rangers.unity
   isLoaded: 1
   isActive: 1
