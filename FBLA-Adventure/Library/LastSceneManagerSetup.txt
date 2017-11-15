@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Park Rangers.unity
+- path: Assets/_Scenes/Pause Menu.unity
   isLoaded: 1
   isActive: 1

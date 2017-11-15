@@ -120,13 +120,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="FBLA-Adventure.csproj">
-      <Project>{BE5D86EC-AD6D-CD5D-8D08-46F4B4FDBF27}</Project>
-      <Name>FBLA-Adventure</Name>
-    </ProjectReference>
     <ProjectReference Include="FBLA-Adventure.Plugins.csproj">
       <Project>{B2991158-4503-B1FB-89A7-CACC64E2166E}</Project>
       <Name>FBLA-Adventure.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="FBLA-Adventure.csproj">
+      <Project>{BE5D86EC-AD6D-CD5D-8D08-46F4B4FDBF27}</Project>
+      <Name>FBLA-Adventure</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -135,6 +135,9 @@
   <ItemGroup>
     <None Include="Assets\Environment\HSPackages\InfiniteGround\Documentation\ReadMe.txt" />
     <None Include="Assets\Environment\HSPackages\InfiniteGround\Shader\Ground.shader" />
+    <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+    <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
+    <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />

@@ -86,6 +86,7 @@
   <ItemGroup>
     <Compile Include="Assets\Environment\HSPackages\InfiniteGround\Script\Ground.cs" />
     <Compile Include="Assets\Environment\Sun\Sun.cs" />
+    <Compile Include="Assets\PauseGame.cs" />
     <Compile Include="Assets\Player\Camera\camMouseLook.cs" />
     <Compile Include="Assets\Player\Camera\switchCamera.cs" />
     <Compile Include="Assets\Player\Jump.cs" />
@@ -94,6 +95,9 @@
   <ItemGroup>
     <None Include="Assets\Environment\HSPackages\InfiniteGround\Documentation\ReadMe.txt" />
     <None Include="Assets\Environment\HSPackages\InfiniteGround\Shader\Ground.shader" />
+    <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+    <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
+    <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
