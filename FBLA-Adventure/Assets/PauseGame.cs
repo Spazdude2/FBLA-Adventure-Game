@@ -7,7 +7,7 @@ public class PauseGame : MonoBehaviour
 {
     public Transform canvas;
     public Transform Player;
-
+	public Transform sun;
 	// Update is called once per frame
 	void Update ()
     {
@@ -22,7 +22,9 @@ public class PauseGame : MonoBehaviour
         {
             canvas.gameObject.SetActive(true);
             Time.timeScale = 0;
-            Player.GetComponent<FirstPersonController>().enabled = false;
+			Player.GetComponent<FirstPersonController>().enabled = false;
+			sun.GetComponent<Sun> ().Orbit = 0;
+
         }
 
         else
@@ -30,6 +32,8 @@ public class PauseGame : MonoBehaviour
             canvas.gameObject.SetActive(false);
             Time.timeScale = 1;
             Player.GetComponent<FirstPersonController>().enabled = true;
+			sun.GetComponent<Sun> ().Orbit = sun.GetComponent<Sun> ().setOrbit;
+
         }
     }
 }
