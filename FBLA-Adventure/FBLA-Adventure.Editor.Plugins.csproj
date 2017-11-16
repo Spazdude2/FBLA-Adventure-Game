@@ -133,6 +133,7 @@
     <Compile Include="Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Bench\ReadMe.txt" />
     <None Include="Assets\Environment\HSPackages\InfiniteGround\Documentation\ReadMe.txt" />
     <None Include="Assets\Environment\HSPackages\InfiniteGround\Shader\Ground.shader" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />

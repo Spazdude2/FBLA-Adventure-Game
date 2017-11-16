@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/Start Menu.unity
+- path: Assets/_Scenes/Looking like a game.unity
   isLoaded: 1
   isActive: 1

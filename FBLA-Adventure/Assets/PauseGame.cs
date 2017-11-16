@@ -15,6 +15,7 @@ public class PauseGame : MonoBehaviour
         {
             Pause();
         }
+
 	}
     public void Pause()
     {
@@ -24,7 +25,7 @@ public class PauseGame : MonoBehaviour
             Time.timeScale = 0;
 			Player.GetComponent<FirstPersonController>().enabled = false;
 			sun.GetComponent<Sun> ().Orbit = 0;
-
+            Cursor.lockState = CursorLockMode.None;
         }
 
         else
@@ -33,6 +34,7 @@ public class PauseGame : MonoBehaviour
             Time.timeScale = 1;
             Player.GetComponent<FirstPersonController>().enabled = true;
 			sun.GetComponent<Sun> ().Orbit = sun.GetComponent<Sun> ().setOrbit;
+            Cursor.lockState = CursorLockMode.Locked;
 
         }
     }
