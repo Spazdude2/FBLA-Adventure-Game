@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/Looking like a game.unity
+- path: Assets/_Scenes/Platinum Status.unity
   isLoaded: 1
   isActive: 1

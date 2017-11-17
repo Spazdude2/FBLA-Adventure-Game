@@ -10,6 +10,9 @@ public class MainMenu : MonoBehaviour
     public Transform Player;
     public Transform sun;
 
+	public Canvas PS;
+	public int timer = 50;
+
     public Canvas quitMenu;
     public Button startText;
     public Button exitText;
@@ -25,7 +28,10 @@ public class MainMenu : MonoBehaviour
         startMenu = startMenu.GetComponent<Canvas>();
         Player.GetComponent<FirstPersonController>().enabled = false;
         sun.GetComponent<Sun>().Orbit = 0;
-        Time.timeScale = 0;
+		PS = PS.GetComponent<Canvas> ();
+		PS.gameObject.SetActive (true);
+		startMenu.gameObject.SetActive (false);
+		Time.timeScale = 0;
 	}
 	
     public void ExitPress()
@@ -54,4 +60,15 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+	void Update()
+	{
+		timer--;
+
+		if (timer == 0) 
+		{
+			PS.gameObject.SetActive (false);
+			startMenu.gameObject.SetActive (true);
+		}
+	}
 }
