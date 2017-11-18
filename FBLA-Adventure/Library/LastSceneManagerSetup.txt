@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/Platinum Status.unity
+- path: Assets/_Scenes/Before Trying to Build Game.unity
   isLoaded: 1
   isActive: 1
